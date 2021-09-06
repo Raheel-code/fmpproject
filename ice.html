@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ****************NAVBAR START********************* -->
+
+
+    <nav class="navbar navbar-expand-lg  navbar-light one ">
+        <div class=" container">
+            <a class="navbar-brand two main" href="#"><img src="" alt="">AL-MEHRAN RESTAURANT</a>
+            <button class="navbar-toggler " style="background-color: rgb(247, 244, 238);" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active two text-light" aria-current="page" href="index.html">HOME</a>
+                    <hr>
+                    <a class="nav-link two text-light" href="./menu.html">MENU</a>
+                    <hr>
+                    <a class="nav-link  two text-light" href="./deals.html">DEALS</a>
+                    <hr>
+                    <a class="nav-link two text-light" href="./about.html">ABOUT</a>
+                    <hr>
+                    <a class="nav-link  two text-light" href="./contact.html" tabindex="-1">CONTACT-US</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container">
+        <div class="py-3">
+            <div class="form p-3 bg-white rounded shadow">
+                <div class="forHeight">
+                    <div class="d-flex justify-content-center my-3">
+                        <div class="btn-group w-100">
+                            <button class="btn btn-outline-secondary btn-lg dropdown-toggle fs-6" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="selecteditem">Select your order</span>
+                            </button>
+                            <ul class="dropdown-menu w-100 ">
+                                <li><a class="dropdown-item" selected onclick="getVal(this)">SHAKES</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Strawberry Shakes (Rs: 180/-)</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Pineapple Shakes (Rs: 180/-)</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Mango Chocolate Shakes (Rs: 180/-)</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Pista Shakes (Rs: 180/-)</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Banana Shakes (Rs: 120/-)</a></li>
+                                <li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Ice Cofee (Rs: 180/-)</a></li>
+                                
+                                <li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" selected onclick="getVal(this)">ICE-CREAM</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">1)Strawberry (Ripple) 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">2)Kulfa 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">3)Caremal Crunch 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">4)Bounty 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">5)Tutti Fruity 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">6)Blue Berry (Ripple) 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">7)Pineapple 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">8)Mango 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">9)Pista 2 Scoop</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Special Falooda (Rs: 230/-)</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Cup 2 scoop (Rs: 100/-)</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Kulfi Falooda (Rs: 180/-)</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Full Pake (Rs: 400/-)</a></li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Family Pack (Rs: 750/-)</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" onclick="getVal(this)">Limca (Rs: 50/-)</a></li>
+                             
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="inputGroup py-2">
+                    <label for="orderselect">Your Order</label>
+                    <input type="text" class="inp fs-6" disabled placeholder="order" name="" id="orderselect">
+                    <label for="FullName">Full Name</label>
+                    <input type="text" class="inp" placeholder="Name" name="" id="FullName">
+                </div>
+                <div class="inputGroup py-2">
+                    <label for="cont">Contact</label>
+                    <input type="text" class="inp" placeholder="+92" name="" id="cont">
+                </div>
+                <div class="inputGroup py-2">
+                    <label for="address">Address</label>
+                    <input type="text" class="inp" placeholder="complete address" name="" id="address">
+                </div>
+                <hr class="backgroundDark mx-3">
+                <div class="inputGroup py-2">
+                    <label for="email">Email</label>
+                    <input type="email" class="inp" placeholder="Email" name="" id="email">
+                </div>
+                <div class="inputGroup btn-warning  py-2">
+                    <button onclick="submit_order()" class="btn backgroundDark  text-dark blck">ORDER SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--.................footer -->
+
+
+    <div class="footer-distributed">
+        <footer class=" container ">
+
+            <div class="footer-left">
+                <h3>Al-Mehran<span> Fast Food</span></h3>
+
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    |
+                    <a href="./about.html">About</a>
+                    |
+                    <a href="./contact.html">Contact</a>
+                    |
+                    <a href="./menu.html">Menu</a>
+                    |
+                    <a href="./deals.html">Deals</a>
+
+                </p>
+
+                <p class="footer-company-name">Copyright © 2021 <strong></strong> All rights reserved</p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <a href="https://goo.gl/maps/SBUAzJ4DEKtr9Gjj9"><i class="fa fa-map-marker"></i></a>
+                    <p><span>Shop # 2,Karachi Cambridge School,Main Allah Wali Stop Sector 5-F New Karachi</span>
+                        Karachi</p>
+                </div>
+                <br>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+923142680648<br>+923017591250</p>
+                </div>
+
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Pizza & Fast Food</span>
+                    <strong>Al-Mehran Fast Food</strong> provide hygiene food for their customer
+                    and
+                    also provide free home delivery near 4k Chowrangi.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+
+
+
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- CARDS END -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+
+        
+        
+        
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+        <script>
+
+
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyBp9DNGAceqjskmqfc5eibt6NA70_kniUo",
+                authDomain: "almehran-fastfood.firebaseapp.com",
+                projectId: "almehran-fastfood",
+                storageBucket: "almehran-fastfood.appspot.com",
+                messagingSenderId: "870913919402",
+                appId: "1:870913919402:web:e8ec327c02f6bb29af83d3",
+                measurementId: "G-7GZHRKN2GH"
+            };
+
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+
+        </script>
+
+
+
+
+        <script src="app.js"></script>
+</body>
+
+</html>
